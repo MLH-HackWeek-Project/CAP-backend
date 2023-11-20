@@ -1,0 +1,32 @@
+{
+  "name": "attatchment-rest-api",
+  "version": "1.0.0",
+  "description": "API for centralized attatchements platform. Allow students to easily get paired with the right organisation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MLH-HackWeek-Project/CAP-backend.git"
+  },
+  "keywords": [
+    "attatchements",
+    "rest",
+    "api",
+    "students"
+  ],
+  "author": "nimrod nyongesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MLH-HackWeek-Project/CAP-backend/issues"
+  },
+  "homepage": "https://github.com/MLH-HackWeek-Project/CAP-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1",
+    "nodemon": "^3.0.1"
+  }
+}
