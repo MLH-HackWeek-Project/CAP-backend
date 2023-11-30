@@ -1,9 +1,12 @@
 const express = require('express')
 const attachRouter = express.Router()
 
+const { requiresAuth } = require('express-openid-connect');
+
 //Create a new attatchement entry
-attachRouter.post('/post', (req, res) => {
-    res.send('Post API')
+attachRouter.post('/post', requiresAuth(),(req, res) => {
+    const user = JSON.stringify(req.oidc.user)
+    res.send(`Post API ${user}`)
 })   
 
 //Get all available attatchements
